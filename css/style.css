@@ -103,13 +103,16 @@ main .flex_productos .flex_productos_1 .img_gral {
 }
 .footer_pa .container_redes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 15rem;
   justify-content: space-around;
   padding: 0%;
 }
-.footer_pa .container_redes .redes {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.footer_pa .letra_autor {
   font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+  border-width: 5%;
 }
 
 .titulo_main {

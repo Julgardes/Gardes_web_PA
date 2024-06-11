@@ -12,13 +12,17 @@
     }
     .container_redes{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 15rem;
         justify-content: space-around;
         padding: 0%;
-        .redes{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-            font-size: 1rem;
-        }
+    }    
+    .letra_autor{
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: justify;
+        border-width: 5%;
     }
 }
+
 
