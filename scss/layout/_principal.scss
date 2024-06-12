@@ -64,10 +64,23 @@ main{
             .img_gral{
                 width: 35%;
                 height: auto;
+                border-radius: 50%;
+                margin-top: 5%;
             }
          }
     }
     
+    @keyframes girar {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    .img_gira{
+        animation: girar 10s linear infinite;    
+    }
     border-bottom: 1px solid black;
     
 }

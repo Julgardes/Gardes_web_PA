@@ -87,6 +87,19 @@ main .flex_productos .flex_productos_1 .parrafo {
 main .flex_productos .flex_productos_1 .img_gral {
   width: 35%;
   height: auto;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .img_gira {
+  animation: girar 10s linear infinite;
 }
 
 .footer_pa {
@@ -155,12 +168,6 @@ main .flex_productos .flex_productos_1 .img_gral {
 }
 .footer_pa .container_redes .red_wp:hover {
   background-color: darkgrey;
-}
-
-.color_insta {
-  background: rgb(131, 58, 180);
-  background-color: deeppink;
-  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(238, 0, 109) 50%, rgb(247, 174, 2) 100%);
 }
 
 .titulo_main {
