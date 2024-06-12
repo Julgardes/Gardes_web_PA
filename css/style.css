@@ -96,23 +96,71 @@ main .flex_productos .flex_productos_1 .img_gral {
   justify-content: space-between;
 }
 .footer_pa .img_footer {
-  width: 5rem;
-  height: auto;
+  width: 10%;
+  height: 10%;
   border-radius: 30%;
   border: rgb(0, 170, 255) solid 4px;
 }
 .footer_pa .container_redes {
   display: flex;
   flex-direction: row;
-  gap: 15rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 5rem;
   justify-content: space-around;
-  padding: 0%;
 }
 .footer_pa .letra_autor {
   font-size: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: justify;
+  align-content: center;
   border-width: 5%;
+}
+
+.footer_pa .container_redes .red_face {
+  text-decoration: none;
+  background-color: #26559A;
+  padding: 2rem;
+  border-radius: 10%;
+  color: white;
+  font-family: kanit;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.footer_pa .container_redes .red_face:hover {
+  background-color: darkgrey;
+}
+.footer_pa .container_redes .red_insta {
+  text-decoration: solid;
+  background-color: deeppink;
+  padding: 2rem;
+  border-radius: 30%;
+  color: black;
+  font-family: dancing;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer_pa .container_redes .red_insta:hover {
+  background-color: darkgrey;
+}
+.footer_pa .container_redes .red_wp {
+  text-decoration: none;
+  background-color: #30AB1F;
+  padding: 2rem;
+  border-radius: 120%;
+  color: white;
+  font-family: Georgia;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer_pa .container_redes .red_wp:hover {
+  background-color: darkgrey;
+}
+
+.color_insta {
+  background: rgb(131, 58, 180);
+  background-color: deeppink;
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(238, 0, 109) 50%, rgb(247, 174, 2) 100%);
 }
 
 .titulo_main {

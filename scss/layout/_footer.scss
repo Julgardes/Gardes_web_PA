@@ -5,24 +5,64 @@
     justify-content: space-between;
 
     .img_footer{
-        width: 5rem;
-        height: auto;
+        width: 10%;
+        height: 10%;
         border-radius: 30%;
         border: rgb(0, 170, 255) solid 4px;        
     }
     .container_redes{
         display: flex;
         flex-direction: row;
-        gap: 15rem;
-        justify-content: space-around;
-        padding: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        gap: 5rem;
+        justify-content: space-around;        
     }    
     .letra_autor{
         font-size: 1rem;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: justify;
+        align-content: center;
         border-width: 5%;
     }
 }
 
+@mixin redes_std ($tx_deco,$bk_color,$pad,$b_rad,$tx_color,$tx_font,$tx_size,$tx_align){
+    text-decoration: $tx_deco;
+    background-color: $bk_color;
+    padding: $pad;
+    border-radius: $b_rad;
+    color: $tx_color;
+    font-family: $tx_font;
+    font-size: $tx_size;
+    text-align: $tx_align;
+}
 
+.footer_pa{
+    .container_redes{
+        .red_face{
+            @include redes_std(none,#26559A,2rem,10%,white,kanit,1.25rem,center);
+            &:hover{
+                background-color: darkgrey; 
+            }
+        }
+        .red_insta{
+            @include redes_std(solid,deeppink,2rem,30%,black,dancing,1.5rem,center);
+            &:hover{
+                background-color: darkgrey; 
+            }
+        }
+        .red_wp{
+            @include redes_std(none,#30AB1F,2rem,120%,white,Georgia,1.5rem,center);
+            &:hover{
+                background-color: darkgrey; 
+            }
+        }
+    }
+}
+
+.color_insta{
+    background: rgb(131,58,180);
+    background-color: deeppink;
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(238,0,109,1) 50%, rgba(247,174,2,1) 100%);
+}

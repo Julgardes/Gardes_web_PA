@@ -1,3 +1,4 @@
+
 @mixin redes_std ($tx_deco,$bk_color,$pad,$b_rad,$tx_color,$tx_font,$tx_align){
     text-decoration: $tx_deco;
     background-color: $bk_color;
@@ -7,8 +8,6 @@
     font-family: $tx_font;
     text-align: $tx_align;
 }
-.red_face{
-    padding: 20px;
-    text-decoration: none;
 
-}
+
+
