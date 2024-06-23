@@ -1,12 +1,14 @@
 .container_rubros{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: inherit;
+    align-content: stretch;
+    justify-content: space-around;
     align-items: center;
     
     .card_rubro{
         width: 200%;
-        border-radius: 8px;
+        border-radius: 1px;
         position: relative;
         cursor: pointer;        
             .img_rubro{
@@ -59,7 +61,7 @@
 
 .card_rubro:hover::after{
     opacity: 1;
-    inset: 20px;
+    inset: 5%;
 }
 
 .card_rubro:hover .link_rubro{

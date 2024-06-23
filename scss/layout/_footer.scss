@@ -1,22 +1,26 @@
 .footer_pa{
-    padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    
     .img_footer{
-        width: 10%;
-        height: 10%;
+        width: 8%;
         border-radius: 30%;
-        border: rgb(0, 170, 255) solid 4px;        
+        border: rgb(0, 170, 255) solid 0.1rem;        
     }
     .container_redes{
         display: flex;
         flex-direction: row;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        gap: 5rem;
-        justify-content: space-around;        
+        flex-wrap: wrap;
+        padding: 1rem;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem; 
+           
     }    
     .letra_autor{
         font-size: 1rem;
@@ -41,19 +45,19 @@
 .footer_pa{
     .container_redes{
         .red_face{
-            @include redes_std(none,#26559A,2rem,10%,white,kanit,1.25rem,center);
+            @include redes_std(none,#26559A,1rem,10%,white,kanit,1.25rem,center);
             &:hover{
                 background-color: darkgrey; 
             }
         }
         .red_insta{
-            @include redes_std(solid,deeppink,2rem,30%,black,dancing,1.5rem,center);
+            @include redes_std(solid,deeppink,1.25rem,30%,black,dancing,1.5rem,center);
             &:hover{
                 background-color: darkgrey; 
             }
         }
         .red_wp{
-            @include redes_std(none,#30AB1F,2rem,120%,white,Georgia,1.5rem,center);
+            @include redes_std(none,#30AB1F,1.2rem,120%,white,Georgia,1.5rem,center);
             &:hover{
                 background-color: darkgrey; 
             }

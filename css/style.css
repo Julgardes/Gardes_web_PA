@@ -103,24 +103,27 @@ main .img_gira {
 }
 
 .footer_pa {
-  padding: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
 }
 .footer_pa .img_footer {
-  width: 10%;
-  height: 10%;
+  width: 8%;
   border-radius: 30%;
-  border: rgb(0, 170, 255) solid 4px;
+  border: rgb(0, 170, 255) solid 0.1rem;
 }
 .footer_pa .container_redes {
   display: flex;
   flex-direction: row;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  list-style: none;
   justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
 .footer_pa .letra_autor {
   font-size: 1rem;
@@ -133,7 +136,7 @@ main .img_gira {
 .footer_pa .container_redes .red_face {
   text-decoration: none;
   background-color: #26559A;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10%;
   color: white;
   font-family: kanit;
@@ -146,7 +149,7 @@ main .img_gira {
 .footer_pa .container_redes .red_insta {
   text-decoration: solid;
   background-color: deeppink;
-  padding: 2rem;
+  padding: 1.25rem;
   border-radius: 30%;
   color: black;
   font-family: dancing;
@@ -159,7 +162,7 @@ main .img_gira {
 .footer_pa .container_redes .red_wp {
   text-decoration: none;
   background-color: #30AB1F;
-  padding: 2rem;
+  padding: 1.2rem;
   border-radius: 120%;
   color: white;
   font-family: Georgia;
@@ -194,12 +197,14 @@ main .img_gira {
 .container_rubros {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: inherit;
+  align-content: stretch;
+  justify-content: space-around;
   align-items: center;
 }
 .container_rubros .card_rubro {
   width: 200%;
-  border-radius: 8px;
+  border-radius: 1px;
   position: relative;
   cursor: pointer;
 }
@@ -249,7 +254,7 @@ main .img_gira {
 
 .card_rubro:hover::after {
   opacity: 1;
-  inset: 20px;
+  inset: 5%;
 }
 
 .card_rubro:hover .link_rubro, .container_rubros .card_rubro:hover .link_rubro_1, .container_rubros .card_rubro:hover .link_rubro_2 {
