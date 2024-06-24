@@ -1,35 +1,37 @@
 .container_rubros{
     display: flex;
     flex-direction: row;
-    flex-wrap: inherit;
     align-content: stretch;
-    justify-content: space-around;
-    align-items: center;
-    
+    justify-content: space-between;
+    align-items: stretch;
+        
     .card_rubro{
-        width: 200%;
-        border-radius: 1px;
+        width: 50%;
+        height: 25%;
         position: relative;
         cursor: pointer;        
             .img_rubro{
-                width: 100%;
-                height: auto;
+                width: 50%;
+                height: 25%;
+                padding: 5rem;
                 border-radius: inherit;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                align-items: stretch;
+                justify-content: space-around;
             }
             .link_rubro{
-                width: 100%;
+                width: 40%;
+                height: 1%;
+                
                 position: absolute;
-                top: 45%;
-                left: 29%;
+                top: 7%;
+                left: 20%;
                 transform: translate(-50%,50%);
                 .letra_rubro{
                     text-decoration: none;
                     font-family: Arial, Helvetica, sans-serif;
                     color: white;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 1.5rem;
                     font-style: oblique;
                     transform: translateY(50%);
@@ -37,11 +39,11 @@
             }
             .link_rubro_1{
                 @extend .link_rubro;
-                left: 35%;                
+                left: 23%;                
             }
             .link_rubro_2{
                 @extend .link_rubro;
-                left: 40%
+                left: 25%
             }
     }
 }
@@ -61,7 +63,7 @@
 
 .card_rubro:hover::after{
     opacity: 1;
-    inset: 5%;
+    inset: 1rem;
 }
 
 .card_rubro:hover .link_rubro{
