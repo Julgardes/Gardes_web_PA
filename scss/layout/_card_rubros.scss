@@ -1,8 +1,9 @@
 .container_rubros{
     display: flex;
     flex-direction: row;
+    
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     margin-bottom: 2rem;
         
     .card_rubro{
@@ -18,6 +19,7 @@
                 height: 10rem;
                 border-radius: inherit;
                 display: flex;
+                flex-wrap: inherit;
                 align-items: stretch;
                 justify-content: space-around;
             }
@@ -41,7 +43,7 @@
             }
             .link_rubro_1{
                 @extend .link_rubro;
-                left: 23%;                
+                left: 23%;                         
             }
             .link_rubro_2{
                 @extend .link_rubro;

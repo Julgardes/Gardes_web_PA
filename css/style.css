@@ -198,7 +198,7 @@ main .img_gira {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
   margin-bottom: 2rem;
 }
 .container_rubros .card_rubro {
@@ -215,6 +215,7 @@ main .img_gira {
   height: 10rem;
   border-radius: inherit;
   display: flex;
+  flex-wrap: inherit;
   align-items: stretch;
   justify-content: space-around;
 }
