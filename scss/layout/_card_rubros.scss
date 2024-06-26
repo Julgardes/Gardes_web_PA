@@ -1,6 +1,7 @@
 .container_rubros{
     display: flex;
     flex-direction: row;
+    border-radius: 2rem;
     justify-content: space-around;
     align-items: stretch;
     margin-bottom: 2rem;
@@ -8,14 +9,14 @@
     .card_rubro{
         width: 100%;
         height: 100%;
-        padding: 2rem;
+        padding: 3rem;
         justify-content: space-around;
         align-content: stretch;
         position: relative;
         cursor: pointer;        
             .img_rubro{
-                width: 10rem;
-                height: 10rem;
+                width: 15rem;
+                height: 15rem;
                 border-radius: inherit;
                 display: flex;
                 align-items: stretch;
@@ -54,7 +55,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    border: 0.5rem solid white;
+    border: 0.5rem solid  rgb(0, 170, 255);
     opacity: 0;
     transition: 0.4s ease-in-out;
 }

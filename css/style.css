@@ -86,10 +86,11 @@ main .flex_productos .flex_productos_1 .parrafo {
   border-width: 5%;
 }
 main .flex_productos .flex_productos_1 .img_gral {
-  width: 35%;
+  width: 45%;
   height: auto;
   border-radius: 50%;
   margin-top: 5%;
+  margin-left: 15%;
 }
 @keyframes girar {
   from {
@@ -198,6 +199,7 @@ main .img_gira {
 .container_rubros {
   display: flex;
   flex-direction: row;
+  border-radius: 2rem;
   justify-content: space-around;
   align-items: stretch;
   margin-bottom: 2rem;
@@ -205,15 +207,15 @@ main .img_gira {
 .container_rubros .card_rubro {
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 3rem;
   justify-content: space-around;
   align-content: stretch;
   position: relative;
   cursor: pointer;
 }
 .container_rubros .card_rubro .img_rubro {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: inherit;
   display: flex;
   align-items: stretch;
@@ -248,7 +250,7 @@ main .img_gira {
   content: "";
   position: absolute;
   inset: 0;
-  border: 0.5rem solid white;
+  border: 0.5rem solid rgb(0, 170, 255);
   opacity: 0;
   transition: 0.4s ease-in-out;
 }
