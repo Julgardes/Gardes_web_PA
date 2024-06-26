@@ -204,14 +204,15 @@ main .img_gira {
 .container_rubros .card_rubro {
   width: 100%;
   height: 100%;
+  padding: 3rem;
   justify-content: space-around;
   align-content: stretch;
   position: relative;
   cursor: pointer;
 }
 .container_rubros .card_rubro .img_rubro {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: inherit;
   display: flex;
   align-items: stretch;
