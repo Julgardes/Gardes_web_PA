@@ -199,31 +199,32 @@ main .img_gira {
 .container_rubros {
   display: flex;
   flex-direction: row;
-  border-radius: 2rem;
+  flex-wrap: wrap;
+  border-radius: 1rem;
   justify-content: space-around;
   align-items: stretch;
   margin-bottom: 2rem;
 }
 .container_rubros .card_rubro {
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
   justify-content: space-around;
   align-content: stretch;
   position: relative;
   cursor: pointer;
 }
 .container_rubros .card_rubro .img_rubro {
-  width: 15rem;
-  height: 15rem;
+  width: 100%;
+  height: 100%;
   border-radius: inherit;
   display: flex;
   align-items: stretch;
   justify-content: space-around;
 }
 .container_rubros .card_rubro .link_rubro, .container_rubros .card_rubro .link_rubro_2, .container_rubros .card_rubro .link_rubro_1 {
-  width: 5rem;
-  height: 5rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
   position: absolute;
   top: 4rem;
@@ -234,6 +235,7 @@ main .img_gira {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  text-align: justify;
   font-weight: 500;
   font-size: 1rem;
   font-style: oblique;
@@ -261,7 +263,7 @@ main .img_gira {
 
 .card_rubro:hover::after {
   opacity: 1;
-  inset: 1rem;
+  inset: 0.5rem;
 }
 
 .card_rubro:hover .link_rubro, .container_rubros .card_rubro:hover .link_rubro_1, .container_rubros .card_rubro:hover .link_rubro_2 {
